@@ -4,3 +4,5 @@
   tasks:
     - name: run ifconfig
       command: ifconfig
+    - name: show ip address
+      debug: msg="upv4 address is {{ ansible_default_ipv4.address }}"
